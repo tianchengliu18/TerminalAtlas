@@ -8,9 +8,9 @@ Copyright © 2026 Tiancheng Liu.
 
 你可以在遵守许可条件的前提下复制、分享和改编这些文档，但必须注明作者、提供许可链接、说明是否修改，且不得用于商业目的。
 
-## 将来的软件代码
+## 软件代码
 
-本仓库目前没有应用源码。除非文件中另有明确许可声明，未来由项目作者原创的软件代码将采用 [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)。该许可允许非商业用途下使用、修改和分发软件；完整条款以链接中的正式文本为准。
+除非文件中另有明确许可声明，本仓库由项目作者原创的软件代码采用 [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)。该许可允许非商业用途下使用、修改和分发软件；完整条款以链接中的正式文本为准。
 
 ## 第三方材料
 

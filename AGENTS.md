@@ -45,3 +45,11 @@ The existing `usability-tester` skill may help plan a moderated usability study 
 - Keep the README current with prerequisites, installation, `npm run dev`, `npm run build`, `npm run test`, usage, and known limits once the app exists. Maintain structured shortcut and command documentation in Markdown.
 - Keep `docs/PRODUCT_SPEC.md` intact unless a product decision explicitly changes it. Document content provenance and license obligations in `docs/ATTRIBUTION.md` when command data is introduced.
 - Update these instructions as the architecture and commands become concrete; preserve existing guidance when editing.
+
+## Current Web architecture and commands
+
+- Run `npm install`, `npm run dev`, `npm run typecheck`, `npm run test`, and `npm run build` from the repository root. Node.js 20.19+ is required.
+- The command snapshot is in `src/content/commands.ts`, with fixed tldr source pages in `handbook/imported-tldr/`. User overlays and learning state are stored separately by `src/persistence/storage.ts` using IndexedDB schema version 2. Record third-party source metadata and keep `docs/ATTRIBUTION.md` current.
+- Keep Ambient scheduling in pure functions in `src/model/scheduler.ts`; pass time and randomness into tests. `src/model/keyboard.ts` owns shortcut guards. The component architecture and Tauri boundary are documented in `docs/ARCHITECTURE.md`.
+- Follow `docs/DESIGN_SYSTEM.md` for five themes and CSS tokens. Use `frontend-design` for substantial interface changes, `vercel-react-best-practices` for React code, `playwright` for browser flows, `web-design-guidelines` for UI audits, `usability-tester` for learning journey reviews, and `doc-coauthoring` when substantial architecture or decision documents are needed.
+- Routine project-local changes should proceed without repeated approval requests. Ask before actions with data loss, irreversible effects, destruction of existing work or material security risk. Sandbox-enforced requests may still be reviewed automatically.
